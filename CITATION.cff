@@ -1,0 +1,28 @@
+cff-version: 1.2.0
+message: "If you use this code, please cite the paper."
+title: "LogSugar: three logistic equations for cooperation, defection and a dynamic carrying capacity"
+type: software
+license: MIT
+version: 1.0.0
+repository-code: "https://github.com/RVase/logsugar"
+authors:
+  - family-names: Vasellini
+    given-names: Riccardo
+    affiliation: "LABSS-ISTC, National Research Council, Rome, Italy; BluEye Simulations, Grosseto, Italy"
+  - family-names: Cecconi
+    given-names: Federico
+    affiliation: "LABSS-ISTC, National Research Council, Rome, Italy"
+  - family-names: Vilone
+    given-names: Daniele
+    affiliation: "LABSS-ISTC, National Research Council, Rome, Italy; GISC-Dep.to de Matemáticas, Universidad Carlos III de Madrid, Spain"
+preferred-citation:
+  type: article
+  title: "Cooperation, Defection, and the Commons: Reproducing an Agent-Based Model of Aksum with Three Logistic Equations"
+  journal: Games
+  authors:
+    - family-names: Vasellini
+      given-names: Riccardo
+    - family-names: Cecconi
+      given-names: Federico
+    - family-names: Vilone
+      given-names: Daniele
