@@ -1,4 +1,6 @@
-# LogSugar — three logistic equations for cooperation, defection and a dynamic carrying capacity
+# Cooperation, Defection, and the Commons:
+Reproducing an Agent-Based Model of Aksum with
+Three Logistic Equations
 
 Code for
 
