@@ -14,11 +14,17 @@ It implements Eqs. (1)–(4) of the paper and regenerates every figure computed 
 
 Cooperators $A_t$, defectors $B_t$ and carrying capacity $K_t$ evolve as
 
-$$A_{t+1} = \max\left(0,\; r_A A_t \left(1 - \frac{N_t}{K_t}\right)\right) \qquad (1)$$
+```math
+A_{t+1} = \max\left(0,\; r_A A_t \left(1 - \frac{N_t}{K_t}\right)\right) \qquad (1)
+```
 
-$$B_{t+1} = \max\left(0,\; r_B B_t \left(1 - \frac{N_t}{K_t}\right)\right) \qquad (2)$$
+```math
+B_{t+1} = \max\left(0,\; r_B B_t \left(1 - \frac{N_t}{K_t}\right)\right) \qquad (2)
+```
 
-$$K_{t+1} = \max\left(K_{\min},\; K_t - \delta K + \Delta K\,\Theta(R_t - \theta)\right) \qquad (3)$$
+```math
+K_{t+1} = \max\left(K_{\min},\; K_t - \delta K + \Delta K\,\Theta(R_t - \theta)\right) \qquad (3)
+```
 
 with $N_t = A_t + B_t$, $R_t = A_t/N_t$, and $\Theta(x) = 1$ for $x \ge 0$, $0$ otherwise (4).
 
