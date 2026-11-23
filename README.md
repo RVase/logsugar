@@ -103,7 +103,7 @@ python -m pytest            # or: python tests/test_model.py
 
 The tests check one step against Eqs. (1)–(4) written out by hand, the non-negativity and
 $K_{\min}$ floors, the $\Theta(0) = 1$ convention, and the identity
-$A_t/B_t = (r_A/r_B)^t\,A_0/B_0$, which follows from (1)–(2) because the density factor is shared.
+$A_t/B_t = (r_A/r_B)^t A_0/B_0$, which follows from (1)–(2) because the density factor is shared.
 
 ## Citation
 
