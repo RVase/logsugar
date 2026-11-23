@@ -1,6 +1,4 @@
-# Cooperation, Defection, and the Commons:
-Reproducing an Agent-Based Model of Aksum with
-Three Logistic Equations
+# Cooperation, Defection, and the Commons: Reproducing an Agent-Based Model of Aksum with Three Logistic Equations
 
 Code for
 
@@ -55,7 +53,7 @@ numbers quoted in the text:
 
 | figure | what is varied | printed check |
 |---|---|---|
-| 1 | $r_B \in \{1.5, 2.5, 2.995, 3.6\}$ at fixed $r_A/r_B = 0.955$ | $R_t < \theta$ first at $t = 90$ in all four panels |
+| 1 | $r_B \in \{1.5, 2.5, 2.995, 3.6\}$ at fixed $r_A/r_B$ (Table 1: 2.860/2.995 ≈ 0.955) | $R_t < \theta$ first at $t = 90$ in all four panels |
 | 2a | $r_B \in [1, 4]$ at fixed $r_A/r_B$; 1400 iterations, first 1280 discarded | cooperators absent from the long-run state |
 | 2b, 2c | $r_A/r_B \in [0.90, 0.99]$ at $r_B = 2.995$ | peak/final 1.11 → 2.37; steps with $R_t \ge \theta$ 40 → 413 |
 | 3b | $\Delta K = 4.83 \times 10^{-3}$ vs $\Delta K = 0$ | peak / equilibrium = 1.29 |
@@ -65,8 +63,12 @@ numbers quoted in the text:
 ```bash
 python run.py trajectory                          # one run with params.json
 python run.py trajectory --set r_A=1.43 --set r_B=1.5
-python run.py sweep r_B 1.0 4.0                   # long-run states as r_B varies
+python run.py sweep r_B 2.86 4.0                  # long-run states as r_B varies, r_A fixed
 ```
+
+`sweep` varies one parameter and holds the others at their `params.json` values. Figure 2a varies
+$r_A$ and $r_B$ together at a fixed ratio; use `figures.py` for that. Keep $r_B \ge r_A$, as the
+paper assumes: below $r_A$ the defectors are the ones excluded.
 
 Results are written to `results/`:
 

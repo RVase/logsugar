@@ -1,6 +1,6 @@
 cff-version: 1.2.0
 message: "If you use this code, please cite the paper."
-title: "LogSugar: three logistic equations for cooperation, defection and a dynamic carrying capacity"
+title: "Code for: Cooperation, Defection, and the Commons: Reproducing an Agent-Based Model of Aksum with Three Logistic Equations"
 type: software
 license: MIT
 version: 1.0.0
